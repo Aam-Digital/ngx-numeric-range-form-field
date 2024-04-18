@@ -25,12 +25,12 @@
 		>
 
 		<div class="options__group">
-			<mat-form-field appearance="legacy">
+			<mat-form-field>
 				<mat-label>Minimum</mat-label>
 				<input formControlName="minimumOption" matInput placeholder="Minimum" />
 			</mat-form-field>
 
-			<mat-form-field appearance="legacy">
+			<mat-form-field>
 				<mat-label>Maximum</mat-label>
 				<input formControlName="maximumOption" matInput placeholder="Maximum" />
 			</mat-form-field>
@@ -56,24 +56,9 @@
 		>
 	</div>
 
-	<h3>Legacy appearance:</h3>
+	<h3>Outline appearance:</h3>
 	<ngx-numeric-range-form-field
-		appearance="legacy"
-		formControlName="range"
-		label="Numeric range"
-		(blurred)="onBlur()"
-		(enterPressed)="onEnter()"
-		(numericRangeChanged)="onValueChange($event)"
-		[readonly]="readonly"
-		[minReadonly]="minReadonly"
-		[maxReadonly]="maxReadonly"
-		[resettable]="resettable"
-		[dynamicSyncValidators]="dynamicSyncValidators | async"
-	></ngx-numeric-range-form-field>
-
-	<h3>Standard appearance:</h3>
-	<ngx-numeric-range-form-field
-		appearance="standard"
+		appearance="outline"
 		formControlName="range"
 		label="Numeric range"
 		(blurred)="onBlur()"
